@@ -1,0 +1,119 @@
+/* Globales */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h1,h2,h3 {
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+h1 span {
+    color: #037bc0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor_navegacion {
+    border-color: #e1e1e1;
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+.container {
+    max-width: 120rem ;
+    margin: 0 auto;
+    /* margin-inline: auto;*/
+}
+
+/* Header y navegación */
+
+.nombre_sitio {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.navegacion_principal {
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    background-image: url(img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* Con px (1px 1px) tambien se puede posicionar el background position*/
+    height: 45rem;
+}
+
+/* Categorías */
+
+.categorias h2{
+    text-align: center;
+    padding: 5rem;
+}
+
+.categoria a{
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #fff;
+    border-bottom-right-radius: 1rem;
+}
+
+.listado_categorias {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+/* Bloque nosotros */
+/* Colocar imagen en un lado y texto al otro lado gracias a linear gradient. El tercer argumento  y el segundo al 50% y no al 100% hace que no sea gradual sino de golpe cambia al 50%*/
+.sobre_nosotros{
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(img/nosotros.jpg);
+    /* Son dos backgrounds, el linear gradient color y la imagen */
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    /* 100% el size del linear gradient y 120 para la imagen*/
+    background-size: 100%, 120rem;
+    background-position: left center;
+}
