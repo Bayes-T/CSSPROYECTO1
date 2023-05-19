@@ -264,3 +264,37 @@ footer p {
 .texto_nosotros {
     color: #000;
 }
+
+/* Blog */
+.contenedor_blog {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 2rem;
+}
+
+
+.date_author {
+    display: flex;
+    justify-content: space-between;
+}
+.date_author p{
+    font-weight: bold;
+}
+
+.date_author span{
+    color: #037bc0;
+}
+
+.centrar_boton {
+    display: flex;
+    justify-content: center;
+}
+.blog_button {
+    background-color: #8cbc00;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color .3s ease;
+}
