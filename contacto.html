@@ -28,9 +28,87 @@
 </nav>  
 </div>
 
-<main class="contenido-princpal container">
+<main class="contenido-principal container">
     <h2>Contáctanos</h2>
 
+    <form action="url">
+
+        <fieldset>
+            <legend>Tus datos</legend>
+        
+    <div class="campo">    
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" type="text" placeholder="Tu nombre">
+    </div>
+
+    <div class="campo">
+        <label for="asunto">Asunto</label>
+        <input id="asunto" type="text" placeholder="Escribo porque...">
+    </div>
+
+    <div class="campo">
+        <label for="email">Email: </label>
+        <input id="email" type="email" placeholder="Tu email">
+    </div>
+
+    <div class="campo">
+        <label for="tel">Teléfono</label>
+        <input id="tel" type="tel" placeholder="Tu teléfono">
+    </div>
+
+    <div class="campo">
+        <div class="centrar_label">
+        <label for="message">Mensaje: </label>
+        <textarea id="message" rows="10" cols="50"></textarea>
+        </div> <!-- Fin centrar label-->
+    </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>País</legend>
+
+            <div class="campo">
+                <label for="pais">País</label>
+                <select id="pais">
+                    <option>Seleccione</option>
+                    <option value="AR">Argentina</option>
+                    <option value="CO">Colombia</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Información extra</legend>
+
+            <div class="campo">
+                <label for="cliente">Cliente</label>
+                <input id="cliente" type="radio" name="tipo" value="cliente">
+            </div>
+
+            <div class="campo">
+                <label for="cliente">Proveedor</label>
+                <input id="proveedor" type="radio" name="tipo" value="proveedor">
+            </div>
+
+            <div class="campo">
+                <label for="categoria">Categoría de interés</label>
+
+                <input list="categorias" name="categorias">
+
+                <datalist id="categorias">
+
+                <option value="Cocina">
+                <option value="Comedor">
+                <option value="Baño">
+
+                </datalist>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
 
 </main>
 
