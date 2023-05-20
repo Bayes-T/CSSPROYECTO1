@@ -301,6 +301,53 @@ footer p {
 
 /* Formulario */
 
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.formulario legend {
+    background-color: #037bc0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.campo {
+display: flex;
+margin-bottom: 2rem;
+}
+
+.campo label{
+    flex-basis: 10rem;
+    /*Intentar con grid*/
+}
+
+.campo input[type="text"], 
+.campo input[type="tel"],
+.campo input[type="email"],
+textarea,
+/*Se puede negar, en este caso puedo seleccionar todos los inputs y negar el de radio, más fácil */
+.campo input:not([type="radio"]){
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+}
 .centrar_label {
     display: flex;
     align-items: center;
